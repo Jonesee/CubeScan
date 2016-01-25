@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="CubeScan.exe" version="1.0.0.1" publicKeyToken="e9fde93688d329e6" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="CubeIcon3.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="CubeScan" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="CubeScan.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CubeScan.exe" size="95744">
+      <assemblyIdentity name="CubeScan" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>SPB/T/Wzkb95Es9koi1j5u6qfNY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DirectShowLib-2005.dll" size="303104">
+      <assemblyIdentity name="DirectShowLib-2005" version="2.1.0.15637" publicKeyToken="67E7B740CDFC2D3F" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>+JdXiDF6iftJerlcLwTTjDcY70Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="CubeIcon3.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ETTqVeIrog5yv6+NW7VCAavMxOM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="CubeScan.exe.config" size="2491">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>CaIn5OZWvpfI0+TcnuItIsWvgjs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=Gigabyte\Wes" issuerKeyHash="da98a4a5c35c45f69553d40d48adffc8af5c81d6" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>crAn5a8X2deXd18jD/vtnnk+Ydg=</DigestValue></Reference></SignedInfo><SignatureValue>e22Z+lNTQHJgHN9oDyfu5CnVVsktOZ+qAd7vI3+oTLFDNz4HXRvkaJxldB1dE/f4wIdE9MTrAedCandqtL8UoCsFIu2HJOX+Vz2Td1jDvv/4yYzYddaJgg474/p4KgWD7zWI27A35SaZZl+QcC7UrSjhSNKkp7L5DbBRcPVCHPg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>zWhUhpCDV+EeRvEGQk8aMgTcoc+mfYJgry6hFO1So9qBmVsFNTZ88pees+/LccWR6XLE4KhhsUsDU6+jygn95xhMl5pGi7QLbgkUE32fZ4g4VDLCHfxz1Hp2fRDOsSFJzTMUnsarKz6HhYjM5T6pJ8X4KI/muFFt8lPJmN9OcYU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="d8613e799eedfb0f235f7797d7d917afe527b072" Description="" Url=""><as:assemblyIdentity name="CubeScan.exe" version="1.0.0.1" publicKeyToken="e9fde93688d329e6" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Gigabyte\Wes</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>1BVSx24htk8sp+03K9QEUCl75m8=</DigestValue></Reference></SignedInfo><SignatureValue>DRdrCp/KZP79DiT+Fc87vr6F05Xd9T/R6Xstz5jRCQyL7ZmXMNMybo6bd63uaaUskBgktZxXYfLsClKMopViNljXJUF8GKnkGpn8bVLzRWvXVpOirU0bJ5FOdiVHTpNA4/wGkfGLANOutZGh4V1HgHPnheAUF8C2yDq/BW7WyUw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zWhUhpCDV+EeRvEGQk8aMgTcoc+mfYJgry6hFO1So9qBmVsFNTZ88pees+/LccWR6XLE4KhhsUsDU6+jygn95xhMl5pGi7QLbgkUE32fZ4g4VDLCHfxz1Hp2fRDOsSFJzTMUnsarKz6HhYjM5T6pJ8X4KI/muFFt8lPJmN9OcYU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIByTCCATKgAwIBAgIQQ83yBrObhqtBQ2EytvKMUTANBgkqhkiG9w0BAQUFADAjMSEwHwYDVQQDHhgARwBpAGcAYQBiAHkAdABlAFwAVwBlAHMwHhcNMTYwMTI1MTQzNTMwWhcNMTcwMTI0MjAzNTMwWjAjMSEwHwYDVQQDHhgARwBpAGcAYQBiAHkAdABlAFwAVwBlAHMwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAM1oVIaQg1fhHkbxBkJPGjIE3KHPpn2CYK8uoRTtUqPagZlbBTU2fPKXnrPvy3HFkelyxOCoYbFLA1Ovo8oJ/ecYTJeaRou0C24JFBN9n2eIOFQywh38c9R6dn0QzrEhSc0zFJ7Gqys+h4WIzOU+qSfF+CiP5rhRbfJTyZjfTnGFAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEANa9G08OQ+WN5jxpkl9Ei2VGS5XNrLuG6m6jK6TyjLacTlxjrmcJ1RPKNts2h/i1+LNT9pcHFFIBCqeg90xZTQl4PtUirmna2XVTX6GNja16TO2SV0RxqR920ijUjw4VwbTmMq37Q7x8zUyeFK0BDmneJYciX6SkHamETJjNnkDk=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
